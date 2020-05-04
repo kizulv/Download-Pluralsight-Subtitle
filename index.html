@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html moznomarginboxes mozdisallowselectionprint>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Bài thực hành Bootstrap</title>
+</head>
+
+<body class="light-mode">
+	<header>
+		<div class="bg-second-color">
+			<nav class="nav-main container-md navbar navbar-expand-lg flex-nowrap py-0 px-sm-3">
+				<div class="navbar-brand">
+					<a class="navbar-text active" href="https://pcthanh.com/">
+						<img class="align-middle" src="https://pcthanh.com/wp-content/themes/pcthanh/images/logo.png" height="36" alt="Blogs cá nhân"><span class="align-middle ml-3 d-none d-md-inline-block"><strong>Trang chủ</strong></span>
+					</a>
+					<div class="navbar-text d-none d-md-inline-block">
+						<a class="navbar-text" href="https://pcthanh.com/cac-cuon-sach-da-doc.html">
+							<span class="align-middle ml-3">Chuyên mục</span>
+						</a>
+						<a class="navbar-text" data-toggle="modal" data-target="#contact_frame">
+							<span class="align-middle ml-3">Liên hệ</span>
+						</a>
+					</div>
+				</div>
+				<div class="nav-search">
+					<form class="nav-form" action="https://pcthanh.com" role="search" _lpchecked="1">
+						<input type="text" placeholder="Tìm kiếm" class="nav-input" name="s">
+						<button type="submit" class="nav-button">
+							<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.782 17.833l-3.115-3.115a.75.75 0 0 0-.532-.219h-.51a6.467 6.467 0 0 0 1.376-4c0-3.59-2.91-6.499-6.5-6.499a6.499 6.499 0 1 0 0 12.999 6.47 6.47 0 0 0 4-1.375v.51c0 .2.078.39.219.53l3.115 3.116a.747.747 0 0 0 1.06 0l.884-.885a.753.753 0 0 0 .003-1.062zM10.5 14.499c-2.21 0-4-1.787-4-4 0-2.209 1.788-4 4-4 2.21 0 4 1.788 4 4 0 2.21-1.787 4-4 4z"></path>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="nav-right text-right ml-3 mr-3 mr-lg-0">
+					<a data-toggle="modal" data-target="#login_frame" title="Đăng nhập">Đăng nhập</a>
+				</div>
+				<button class="navbar-toggler navbar-dark px-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
+		<div class="bg-main-color">
+			<nav class="nav-second container-md navbar navbar-expand-lg flex-nowrap py-0 px-sm-3">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-text d-inline-block d-md-none">
+						<a class="navbar-text" href="https://pcthanh.com/blogs">
+							<span class="align-middle mr-3">Blogs</span>
+						</a>
+						<a class="navbar-text" href="https://pcthanh.com/download-subtitles-of-courses-from-pluralsight">
+							<span class="align-middle mr-3">Download Subtitles Pluralsight</span>
+						</a>
+						<a class="navbar-text" data-toggle="modal" data-target="#contact_frame">
+							<span class="align-middle mr-3">Liên hệ</span>
+						</a>
+					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://pcthanh.com/blogs">
+								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="d-inline-block align-middle">
+									<path d="M11.143 4.585L9.194 8.707l-4.361.663c-.782.118-1.096 1.123-.529 1.7l3.156 3.205-.747 4.53c-.134.818.693 1.432 1.386 1.049L12 17.715l3.901 2.139c.693.38 1.52-.23 1.386-1.05l-.747-4.529 3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94 0 0 0-1.713 0z"></path>
+								</svg>
+								<span class="align-middle">Blogs</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://pcthanh.com/download-subtitles-of-courses-from-pluralsight">
+								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="d-inline-block align-middle">
+									<path d="M11.143 4.585L9.194 8.707l-4.361.663c-.782.118-1.096 1.123-.529 1.7l3.156 3.205-.747 4.53c-.134.818.693 1.432 1.386 1.049L12 17.715l3.901 2.139c.693.38 1.52-.23 1.386-1.05l-.747-4.529 3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94 0 0 0-1.713 0z"></path>
+								</svg>
+								<span class="align-middle">Download Subtitles Pluralsight</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<style>
+			.download-subtitle-input textarea {
+				width: 100%;
+				height: 200px;
+				font-size: .8rem;
+				resize: none;
+				font-family: Monaco, "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+				color: #565a5d;
+				border: solid 1px #2177e2;
+			}
+			
+			.dark-mode .download-subtitle-input textarea {
+				background-color: #161616;
+				color: #fff;
+			}
+			
+			.table-content {
+				padding: 1rem !important;
+				background: #ccc;
+			}
+			
+			.dark-mode #table_content {
+				color: #212529;
+			}
+			
+			#blogs ol>li,
+			#blogs ul>li {
+				margin-bottom: 1rem;
+			}
+			
+			#blogs ol>li,
+			#blogs ul>ul {
+				list-style: none;
+				padding-left: 1.75rem;
+				margin-bottom: 1.5rem;
+				font-size: .95rem;
+			}
+		</style>
+		<div class="container-fluid text-center">
+			<button id="change_mode_style" class="btn btn-dark mb-4 px-5 text-uppercase"><strong>Darkmode</strong></button>
+		</div>
+		<section class="download-subtitle-pluralsight">
+			<article id="blogs" class="337">
+				<div class="container-md px-0">
+					<div class="blogs-container">
+						<div class="blogs-header">
+							<h1 class="text-center container-fluid py-3">Download Subtitles of courses from Pluralsight</h1></div>
+						<div class="blogs-content container-lg px-md-5 mb-5">
+							<p>This tool have you Download Subtitles of courses from Pluralsight, you need a subcribe account to login.</p>
+							<p><strong>Step 1. </strong>Login <a rel="noreferrer noopener" href="https://pluralsight.com/" target="_blank">Pluralsight</a> and Open any video of course you want to download subtitle.</p>
+							<p><strong>Step 2.</strong> View page source by Ctrl + U or Right click in page and Select “<strong>View page source</strong>“.</p>
+							<p><strong>Step 3.</strong> Copy all source code and pase it in form below.</p>
+							<p><strong>Step 4.</strong> Take a few time to get file and download.</p>
+							<p>Comment if you have any issues or give a thanks. Have a nice day!!!</p>
+							<p class="text-center text-success mb-2"><span>29/04/2020 – Fix Issues – Everything work fine </span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+									<path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path>
+								</svg>
+							</p>
+							<div class="download-subtitle-form">
+								<div class="download-subtitle-input text-center">
+									<textarea name="subtitle-json" class="rounded mb-3 p-2" id="subtitle_input" placeholder="Pase Source code from Pluralsight here!!!"></textarea>
+									<div id="messenger_error"></div>
+									<button class="btn btn-dark mb-4 mx-2 px-4 text-uppercase" onclick="getDownloads()" id="btn_general"><strong>Get subtitles</strong></button>
+								</div>
+								<div class="subtitle-general" id="subtitle_general"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<script type="text/javascript" src="js/jszip.min.js"></script>
+		<script type="text/javascript" src="js/FileSaver.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<div class="blogs-copyright position-fixed text-muted text-upercase text-nowrap d-none d-md-block">
+			<div class="blogs-copyright-content position-absolute">
+				<span> PCTHANH.COM BY PHAM CONG THANH | 2020</span>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer bg-second-color">
+			<div class="footer-content container-md py-2">
+				<div class="row no-gutters">
+					<div class="col-lg-9 text-center text-lg-left">
+						<div class="d-sm-inline-block">© 2020 Phạm Công Thành.</div>
+						<div class="d-sm-inline-block">Themes designed by me</div>
+						<div class="d-sm-inline-block footer-inline-dot">Hosted by Fake NAS Synology</div>
+					</div>
+					<div class="col-lg-3 text-center text-lg-right">
+						Made with
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 text-danger mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+						</svg>in Lai Chau
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=826958344145998&autoLogAppEvents=1"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$(function() {
+					var current_mode = get_cookie_value('s_mode');
+
+					if (current_mode === undefined) {
+						current_mode = 'light-mode';
+					}
+
+					function get_cookie_value(cookie_name) {
+						var cookie_all = document.cookie;
+						var cookie_list = cookie_all.split('; ');
+						var cookie_cname = cookie_name + "=";
+
+						for (var cookie_i = 0; cookie_i < cookie_list.length; cookie_i++) {
+							var _cookie = cookie_list[cookie_i]
+
+							if (_cookie.indexOf(cookie_cname) === 0) {
+								_cookie_value = _cookie.slice(cookie_cname.length);
+								return _cookie_value;
+							}
+						}
+					}
+
+					function set_cookie(cookie_name, cookie_value, cookie_day_to_expires) {
+						var time = new Date();
+						var time_now_ms = time.getTime();
+						var time_expires_ms = time_now_ms + cookie_day_to_expires * 24 * 60 * 60 * 1000;
+
+						// Time expires ms to format as "January 1, 1970 15:11:22 GMT+0700 (Indochina Time)"
+						time.setTime(time_expires_ms);
+						var time_expires_cookieFormat = time.toGMTString();
+						document.cookie = cookie_name + "=" + cookie_value + "; expires=" + time_expires_cookieFormat;
+					}
+
+					function current_mode_style() {
+						if (current_mode === "light-mode") {
+							$('body').attr('class', 'light-mode');
+							$('#change_mode_style strong').text("Darkmode");
+						} else {
+							$('body').attr('class', 'dark-mode');
+							$('#change_mode_style strong').text("Lightmode");
+						}
+
+					}
+
+					function update_mode_style() {
+						var _current_mode = get_cookie_value('s_mode');
+						if (_current_mode === undefined) {
+							_current_mode = 'light-mode';
+						}
+
+						// Hiện tại là "light-mode" sau khi click: Button -> Lightmode(bấm vào để chuyển về light-mode); Class -> Darkmode; Cookie ->dark-mode;
+						if (_current_mode === "light-mode") {
+							$('body').attr('class', 'dark-mode');
+							$('#change_mode_style strong').text("Lightmode");
+							set_cookie('s_mode', 'dark-mode', 20);
+						} else {
+							$('body').attr('class', 'light-mode');
+							$('#change_mode_style strong').text("Darkmode");
+							set_cookie('s_mode', 'light-mode', 20);
+						}
+
+					}
+
+					// Bootstrap
+					$('[data-toggle="tooltip"]').tooltip();
+					$('[data-toggle="popover"]').popover();
+
+					current_mode_style();
+
+					// Toggle Dark-Light Mode
+					$('#change_mode_style').click(
+						function() {
+							update_mode_style();
+						}
+					);
+				});
+			})
+		</script>
+	</footer>
+</body>
+
+</html>
