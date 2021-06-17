@@ -18,7 +18,7 @@ function titleProcess (title) {
 }
 
 function get_json(source){
-	let object_json = source.match(/(<script id="__NEXT_DATA__" type="application\/json">{)+(.)+(]}<\/script>)+/gm);
+	let object_json = source.match(/(<script id="__NEXT_DATA__" type="application\/json">{)+(.)+(}<\/script>)+/gm);
 	let error_messenger = '';
 
 	try {
