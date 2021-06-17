@@ -1,7 +1,7 @@
 # Download Pluralsight Subtitle
 
 ```diff
-+ 22/10/2020 – Everything work fine 
++ 17/06/2021 – Everything work fine 
 ```
 
 Online tool: [Download subtitle Pluralsight](https://pcthanh.com/download-subtitles-of-courses-from-pluralsight)
