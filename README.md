@@ -19,4 +19,4 @@ This tool have you Download Subtitles of courses from Pluralsight, you need a pa
 
 **Step 4.** Take a few time to get file and download.
 
-Create by [Phạm Công Thành](https://pcthanh.com/) on [pcthanh](https://pcthanh.com/)
+Create by [Phạm Công Thành](https://pcthanh.com/) on [pcthanh](https://pcthanh.com/) - [thuốc trị bỏng](https://nhathuocxuanbach.vn/)
