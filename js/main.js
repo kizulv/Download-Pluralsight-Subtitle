@@ -9,7 +9,7 @@ async function fetchTest(url) {
 
 function titleProcess (title) {
 	// * : < > ? / \ | ~ ” # % & * : < > ? / \ { | } 
-	const regex = /(\*)|(\:)|(\<)|(\>)|(\?)|(\/)|(\\)|(\|)|(\~)|(\”)|(\#)|(\%)|(\&)|(\*)|(\:)|(\<)|(\>)|(\{)|(\})/gm;
+	const regex = /(\*)|(\:)|(\<)|(\>)|(\?)|(\/)|(\\)|(\|)|(\~)|(\”)|(\#)|(\%)|(\&)|(\*)|(\:)|(\<)|(\>)|(\{)|(\})|(\')/gm;
 	let title_beauty = title.replace(regex, `-`);
 
 	title_beauty = title_beauty.replace(/(\s)+.srt/gm,'.srt');
